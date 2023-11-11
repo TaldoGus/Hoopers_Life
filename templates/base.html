@@ -5,18 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/css/style.css">
     <title>Hooper_Life</title>
-    <header>
-        <div class="menu">
-            <a href="/">Home</a>
-            <a href="/quem">quem</a>
-            <a href="/dicas">dicas</a>
-            <a href="/onde">Onde aprender mais</a>
-        </div>
-    </header>
 </head>
 <body>
+    <header>
+        <nav>
+            <ul>
+                <div class="menu">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/quem">Quem</a></li>
+                    <li><a href="/dicas">Dicas</a></li>
+                    <li><a href="/onde">Onde aprender mais</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
     {% block main %}
-
     {% endblock %}
 </body>
 </html>

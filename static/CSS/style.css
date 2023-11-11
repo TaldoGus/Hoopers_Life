@@ -1,0 +1,34 @@
+/* Reset de estilos básicos para remover margens e preenchimento padrão do navegador */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do cabeçalho */
+header {
+    color: #ffffff; /* Cor do texto */
+    background: linear-gradient(to right, #FF4500, rgb(92, 2, 133), #0074D9); /* Fundo degradê inspirado nas cores de basquete */
+    padding: 20px 0; /* Preenchimento superior e inferior de 30px e preenchimento esquerdo/direito automático */
+}
+
+/* Estilo da navegação */
+nav ul {
+    list-style: none; /* Remover marcadores de lista padrão */
+    text-align: center; /* Centralizar os itens do menu horizontalmente */
+}
+
+.menu li {
+    display: inline; /* Exibir os itens do menu em linha */
+    margin: 0 80px; /* Adicionar margem à direita e à esquerda de 20px para espaçamento entre os itens */
+}
+
+.menu a {
+    text-decoration: none; /* Remover sublinhado dos links */
+    color: #f0ebeb; /* Cor do texto dos links */
+    font-weight: bold; /* Texto em negrito */
+    margin: 0 20px; /* Margem à direita e à esquerda de 20px para espaçamento */
+}
+
+.corpoindex{
+    background: linear-gradient(to right,#c46308 , #edac56e7, #f5a844e6, #edac56e7, #c46308)
+}
