@@ -2,11 +2,17 @@
 body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
+    
 }
+
+body{
+    background: linear-gradient(to right,#c46308 , #edac56e7, #f5a844e6, #edac56e7, #c46308)
+}
+
 
 /* Estilo do cabeçalho */
 header {
-    color: #ffffff; /* Cor do texto */
+    border-bottom: 5px solid rgb(0, 0, 0);
     background: linear-gradient(to right, #FF4500, rgb(92, 2, 133), #0074D9); /* Fundo degradê inspirado nas cores de basquete */
     padding: 20px 0; /* Preenchimento superior e inferior de 30px e preenchimento esquerdo/direito automático */
 }
@@ -26,9 +32,52 @@ nav ul {
     text-decoration: none; /* Remover sublinhado dos links */
     color: #f0ebeb; /* Cor do texto dos links */
     font-weight: bold; /* Texto em negrito */
+    font-size: 20px;
     margin: 0 20px; /* Margem à direita e à esquerda de 20px para espaçamento */
 }
 
 .corpoindex{
-    background: linear-gradient(to right,#c46308 , #edac56e7, #f5a844e6, #edac56e7, #c46308)
+    display: flex;
+        
 }
+
+/*CARROSSEL index*/
+
+/* Estilização dos botões de navegação */
+label {
+    cursor: pointer;
+}
+
+/* Estilização dos slides */
+.slides {
+    display: flex;
+    justify-content: center;
+    overflow:  visible;
+}
+
+.carousel-item {
+    width: 100%;
+    transition: transform 1s;
+}
+
+/* Estilização do vídeo youtube */
+.carousel-item iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* Início com o primeiro slide visível */
+#slide-1:checked ~ .slides .carousel-item {
+    transform: translateX(25px);
+}
+
+#slide-2:checked ~ .slides .carousel-item {
+    transform: translateX(26%);
+}
+
+#slide-3:checked ~ .slides .carousel-item {
+    transform: translateX(-40%);
+}
+
+
+
