@@ -1,19 +1,20 @@
-/* Reset de estilos básicos para remover margens e preenchimento padrão do navegador */
+/* reset estilos básicos para remover margens e preenchimento padrão do navegador */
 body, h1, h2, p, ul, li {
     margin: 0;
-    padding: 0;
-    
+    padding: 0; 
 }
 
 body{
-    background: linear-gradient(to right,#c46308 , #edac56e7, #f5a844e6, #edac56e7, #c46308)
+    background-image: url(/static/img/court1.png);
+    background-position: center top;
+    background-attachment: fixed;
+    /*background: linear-gradient(to right,#c46308 , #edac56e7, #f5a844e6, #edac56e7, #c46308)*/
 }
-
 
 /* Estilo do cabeçalho */
 header {
     border-bottom: 5px solid rgb(0, 0, 0);
-    background: linear-gradient(to right, #FF4500, rgb(92, 2, 133), #0074D9); /* Fundo degradê inspirado nas cores de basquete */
+    background: linear-gradient(to right,rgb(248, 0, 29),rgb(101, 10, 180),rgb(5, 21, 192)); /*Fundo degradê inspirado nas cores de basquete */
     padding: 20px 0; /* Preenchimento superior e inferior de 30px e preenchimento esquerdo/direito automático */
 }
 
@@ -34,49 +35,42 @@ nav ul {
     font-weight: bold; /* Texto em negrito */
     font-size: 20px;
     margin: 0 20px; /* Margem à direita e à esquerda de 20px para espaçamento */
+    text-transform: uppercase;
+        text-shadow:
+    -1px -1px 0 #000,  /* Sombra superior esquerda */
+    1px -1px 0 #000,   /* Sombra superior direita */
+    -1px 1px 0 #000,   /* Sombra inferior esquerda */
+    1px 1px 0 #000;    /* Sombra inferior direita */    
 }
 
 .corpoindex{
     display: flex;
+    justify-content: center;
         
 }
 
-/*CARROSSEL index*/
+.texto_pagina h1{
+    color: rgb(255, 255, 255);
+    line-height: 2.5;
+    letter-spacing: 2px;
+    font-size: 36px;
 
-/* Estilização dos botões de navegação */
-label {
-    cursor: pointer;
+    text-shadow:
+        -2px -2px 0 #000,  /* Sombra superior esquerda */
+        2px -2px 0 #000,   /* Sombra superior direita */
+        -2px 2px 0 #000,   /* Sombra inferior esquerda */
+        2px 2px 0 #000;    /* Sombra inferior direita */
+
 }
+.texto_pagina p{
+    color: aliceblue;
+    font-size: large;
+    text-shadow:
+    -1px -1px 0 #000,  /* Sombra superior esquerda */
+    1px -1px 0 #000,   /* Sombra superior direita */
+    -1px 1px 0 #000,   /* Sombra inferior esquerda */
+    1px 1px 0 #000;    /* Sombra inferior direita */
 
-/* Estilização dos slides */
-.slides {
-    display: flex;
-    justify-content: center;
-    overflow:  visible;
-}
-
-.carousel-item {
-    width: 100%;
-    transition: transform 1s;
-}
-
-/* Estilização do vídeo youtube */
-.carousel-item iframe {
-    width: 100%;
-    height: 100%;
-}
-
-/* Início com o primeiro slide visível */
-#slide-1:checked ~ .slides .carousel-item {
-    transform: translateX(25px);
-}
-
-#slide-2:checked ~ .slides .carousel-item {
-    transform: translateX(26%);
-}
-
-#slide-3:checked ~ .slides .carousel-item {
-    transform: translateX(-40%);
 }
 
 
