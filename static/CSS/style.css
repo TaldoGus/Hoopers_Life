@@ -15,6 +15,8 @@ header {
     padding: 20px 0; /* Preenchimento superior e inferior de 30px e preenchimento esquerdo/direito automático */
 }
 
+
+
 /* Estilo da navegação */
 nav ul {
     list-style: none; /* Remover marcadores de lista padrão */
@@ -47,6 +49,7 @@ nav ul {
     background-position: center top;
     background-attachment: fixed;        
 }
+
 
 
 
@@ -144,5 +147,8 @@ nav ul {
 
 /* FIM DOS CARDS  */
 
-
+.video{
+    margin-left: 15%;
+  
+}
 
