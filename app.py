@@ -4,9 +4,9 @@ app = Flask("name")
 def home():
     return render_template('index.html')
 
-@app.route('/quem')
-def quem():
-    return render_template('quem.html')
+@app.route('/posicoes')
+def posicoes():
+    return render_template('posicoes.html')
 
 
 @app.route('/dicas')
