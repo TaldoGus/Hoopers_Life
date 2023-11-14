@@ -4,11 +4,8 @@ body, h1, h2, p, ul, li {
     padding: 0; 
 }
 
-body{
-    background-image: url(/static/img/court1.png);
-    background-position: center top;
-    background-attachment: fixed;
-    /*background: linear-gradient(to right,#c46308 , #edac56e7, #f5a844e6, #edac56e7, #c46308)*/
+body{    
+ /*background: linear-gradient(to right,#c46308 , #edac56e7, #f5a844e6, #edac56e7, #c46308)*/
 }
 
 /* Estilo do cabeçalho */
@@ -44,32 +41,38 @@ nav ul {
 }
 
 .corpoindex{
+    background-image: url(/static/img/court1.png);  
     display: flex;
     justify-content: center;
-        
+    background-position: center top;
+    background-attachment: fixed;        
 }
 
 
 
 .texto_pagina h1{
+    
+    margin-left: 5% ;
+    margin-right: 5%;
     padding-top: 100px;
     color: rgb(255, 255, 255);
     line-height: 2.5;
     letter-spacing: 2px;
-    font-size: 36px;
-
+    font-size: 3.5rem;
     text-shadow:
         -2px -2px 0 #000,  /* Sombra superior esquerda */
         2px -2px 0 #000,   /* Sombra superior direita */
         -2px 2px 0 #000,   /* Sombra inferior esquerda */
         2px 2px 0 #000;    /* Sombra inferior direita */
-
 }
 .texto_pagina p{
+    margin-left: 7%;
+    margin-right: 7%;
     padding-top: 20px;
     color: aliceblue;
-    font-size: large;
-    text-shadow:
+    font-size: 1.5rem ;
+    background-color:rgba(46, 44, 44, 0.6);
+    text-shadow:    
     -1px -1px 0 #000,  /* Sombra superior esquerda */
     1px -1px 0 #000,   /* Sombra superior direita */
     -1px 1px 0 #000,   /* Sombra inferior esquerda */
@@ -79,16 +82,17 @@ nav ul {
 
 /*CARDS INICIO */
 .card {
+
     justify-content: center;
     display: flex;
-    background-color:rgba(255, 151, 14, 0.8);
+    background-color:rgba(255, 151, 14, 0.7);
     border: 2px solid #000000; /* Adicione uma borda ao card */
     border-radius: 35px;
     margin: 20px ;
     padding: 20px;
     transition: transform 0.5s ease;
-    
-  
+    margin: 20px auto;
+    width: 55%
 }
 
 .card:hover {
@@ -101,7 +105,12 @@ nav ul {
 }
 
 .card h2 {
-    font-size: 1.5rem;
+    text-shadow: 
+    -1px -1px 0 #000,  /* Sombra superior esquerda */
+    1px -1px 0 #000,   /* Sombra superior direita */
+    -1px 1px 0 #000,   /* Sombra inferior esquerda */
+    1px 1px 0 #000;    /* Sombra inferior direita */;
+    font-size: 1.8rem;
     margin: 0;
     color: #ffffff;
 }
@@ -112,8 +121,9 @@ nav ul {
 }
 
 .card li {
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: #ffffff;
+    text-align: justify;
 }
 
 .card h3{
@@ -123,12 +133,13 @@ nav ul {
 }
 
 .card img {
-   
+    margin: 20px auto; /*distancia do texto acima*/
+    margin-left: 20px; /* distancia texto lado*/
+    float: right;
     max-width: 800px; /* Defina a largura máxima da imagem */
     max-height: 400px;
     border: 2px solid #000000; /* Adicione uma borda à imagem */
     border-radius: 15px; /* Adicione uma borda arredondada à imagem */
-    margin-left: 75%; /* Adicione margem à esquerda da imagem para separá-la do texto */
 }
 
 /* FIM DOS CARDS  */
