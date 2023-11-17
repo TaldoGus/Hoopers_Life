@@ -54,7 +54,7 @@ nav ul {
 
 
 .texto_pagina h1{
-    
+    font-family: sans-serif ;
     margin-left: 5% ;
     margin-right: 5%;
     padding-top: 100px;
@@ -69,6 +69,7 @@ nav ul {
         2px 2px 0 #000;    /* Sombra inferior direita */
 }
 .texto_pagina p{
+    font-family: sans-serif ;
     margin-left: 7%;
     margin-right: 7%;
     padding-top: 20px;
@@ -116,22 +117,26 @@ nav ul {
     font-size: 1.8rem;
     margin: 0;
     color: #ffffff;
+    font-family: sans-serif;
 }
 
 .card p {
     font-size: 1rem;
     color: #ffffff;
+    font-family: sans-serif ;
 }
 
 .card li {
     font-size: 1.5rem;
     color: #ffffff;
     text-align: justify;
+    font-family: sans-serif ;
 }
 
 .card h3{
     font-size: 1rem;
     color: #ffffff;
+    font-family: sans-serif ;
 
 }
 
