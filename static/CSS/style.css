@@ -30,6 +30,7 @@ nav ul {
 }
 
 .menu a {
+  
     text-decoration: none; /* Remover sublinhado dos links */
     color: #f0ebeb; /* Cor do texto dos links */
     font-weight: bold; /* Texto em negrito */
@@ -51,8 +52,10 @@ nav ul {
     background-attachment: fixed;        
 }
 
-
-
+#desc_index{
+  padding-top: 200px;
+  padding-left: 50px;
+}
 
 .texto_pagina h1{
     font-family: sans-serif ;
@@ -75,7 +78,7 @@ nav ul {
     margin-right: 7%;
     padding-top: 20px;
     color: aliceblue;
-    font-size: 1.5rem ;
+    font-size: 1.3rem ;
     background-color:rgba(46, 44, 44, 0.6);
     text-shadow:    
     -1px -1px 0 #000,  /* Sombra superior esquerda */
@@ -127,7 +130,7 @@ nav ul {
     font-family: sans-serif ;
 }
 
-.card li {
+#card li {
     font-size: 1.5rem;
     color: #ffffff;
     text-align: justify;
@@ -152,7 +155,7 @@ nav ul {
 }
 
 /* FIM DOS CARDS  */
-
+/*video pagina DICAS*/
 .video{
     margin-left: 15%;
   
@@ -315,13 +318,15 @@ nav ul {
   color: silver;
 
 }
-#topico p, li{
+
+.topico p{
   font-family: sans-serif ;
   margin-left: 7%;
   margin-right: 7%;
   padding-top: 5px;
   color: aliceblue;
   font-size: 1.5rem ;
+  background-color:rgba(46, 44, 44, 0.6); 
   text-shadow:    
   -1px -1px 0 #000,  /* Sombra superior esquerda */
   1px -1px 0 #000,   /* Sombra superior direita */
@@ -329,7 +334,7 @@ nav ul {
   1px 1px 0 #000;    /* Sombra inferior direita */
 }
 
-#topico h2{
+.topico h2{
   padding-right: 65%;
   font-family: sans-serif ;
   margin-left: 5% ;
@@ -365,6 +370,7 @@ nav ul {
 
 .video {
   margin-top: 20px; /* Ajuste a margem superior conforme necessário */
+  margin-left: 15%;
 }
 
 .video-wrapper {
@@ -381,6 +387,31 @@ nav ul {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.video p{
+  font-family: sans-serif ;
+  margin-left: 7%;
+  margin-right: 7%;
+  padding-top: 5px;
+  color: aliceblue;
+  font-size: 1.5rem ;
+  background-color:rgba(0, 0, 0, 0.7); 
+
+}
+
+.video h2,h3{
+  font-family: sans-serif ;
+  margin-left: 7%;
+  margin-right: 7%;
+  padding-top: 5px;
+  color: aliceblue;
+  font-size: large ;
+  text-shadow:
+  -1px -1px 0 #000,  /* Sombra superior esquerda */
+  1px -1px 0 #000,   /* Sombra superior direita */
+  -1px 1px 0 #000,   /* Sombra inferior esquerda */
+  1px 1px 0 #000;    /* Sombra inferior direita */
 }
 
 
@@ -469,6 +500,7 @@ nav ul {
 
 .menu li {
   margin: 0 20px; /* Reduzir a margem para os itens do menu */
+  
 }
 
 .menu a {
@@ -480,6 +512,21 @@ nav ul {
   font-size: 2.5rem; /* Reduzir o tamanho do título */
   margin-left: 3%; /* Ajustar margens */
   margin-right: 3%;
+}
+
+.texto_pagina{
+  font-family: sans-serif ;
+  margin-left: 7%;
+  margin-right: 7%;
+  padding-top: 2%;
+  color: aliceblue;
+  font-size: 3.6rem ;
+  text-shadow:
+  -1px -1px 0 #000,  /* Sombra superior esquerda */
+  1px -1px 0 #000,   /* Sombra superior direita */
+  -1px 1px 0 #000,   /* Sombra inferior esquerda */
+  1px 1px 0 #000;    /* Sombra inferior direita */
+  
 }
 
 .texto_pagina p {

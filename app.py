@@ -14,7 +14,7 @@ def dicas():
     return render_template('dicas.html')
 
 
-@app.route('/nba')
-def nba():
-    return render_template('nba.html')
+@app.route('/contato')
+def contato():
+    return render_template('contato.html')
 
