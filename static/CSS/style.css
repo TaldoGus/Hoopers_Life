@@ -300,23 +300,90 @@ nav ul {
 
 
 /* Página Dicas*/
+.nome{
+
+  padding-right: 0%;
+  font-family: sans-serif;
+  line-height: 2.5;
+  letter-spacing: 2px;
+  font-size: 4.5rem;
+  text-shadow:
+      -2px -2px 0 #000,  /* Sombra superior esquerda */
+      2px -2px 0 #000,   /* Sombra superior direita */
+      -2px 2px 0 #000,   /* Sombra inferior esquerda */
+      2px 2px 0 #000;    /* Sombra inferior direita */
+  color: silver;
+
+}
+#topico p, li{
+  font-family: sans-serif ;
+  margin-left: 7%;
+  margin-right: 7%;
+  padding-top: 5px;
+  color: aliceblue;
+  font-size: 1.5rem ;
+  text-shadow:    
+  -1px -1px 0 #000,  /* Sombra superior esquerda */
+  1px -1px 0 #000,   /* Sombra superior direita */
+  -1px 1px 0 #000,   /* Sombra inferior esquerda */
+  1px 1px 0 #000;    /* Sombra inferior direita */
+}
+
+#topico h2{
+  padding-right: 65%;
+  font-family: sans-serif ;
+  margin-left: 5% ;
+  margin-right: 5%;
+  color: rgb(226, 172, 10);
+  font-size: 4rem;
+  text-shadow:
+      -1px -1px 0 #000,  /* Sombra superior esquerda */
+      1px -1px 0 #000,   /* Sombra superior direita */
+      -1px 1px 0 #000,   /* Sombra inferior esquerda */
+      1px 1px 0 #000;    /* Sombra inferior direita */
+}
+
+
+
 .conteudo-centralizado {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding-right: 12%;
+  text-align: justify;
+  display: relative;
+  flex-direction: column;
+  text-align: center;
+  padding-right: 12%;
+
+  background-image: url(/static/img/background_bask.jpg);
+  background-position: center center;
+  background-attachment: fixed;  
 }
 .conteudo-centralizado h2{
-    padding-top: 50px;
+  padding-top: 15px;
 }
 .conteudo-centralizado h3,p{
-    padding-right: 6%;
+  padding-right: 6%;
 }
 
 .video {
-    margin-top: 20px; /* Ajuste a margem superior conforme necessário */
+  margin-top: 20px; /* Ajuste a margem superior conforme necessário */
 }
+
+.video-wrapper {
+  position: relative;
+  width: 40%; /* Ajuste o tamanho do vídeo conforme desejado */
+  padding-bottom: 28%; /* Proporção de aspecto 16:9 para o vídeo */
+  margin: 0 auto; /* Centralizar o vídeo horizontalmente */
+  overflow: hidden;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
 
 /*para dispositivos maiores*/
 @media screen and (min-width: 767px) {
